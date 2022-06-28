@@ -53,4 +53,9 @@ module.exports = createCoreController("api::video.video", ({ strapi }) => ({
   async notificationVideo(ctx) {
     console.log(ctx);
   },
+
+  async notificationVideoAcknowledge(ctx) {
+    console.log(ctx);
+    return "hello youtube";
+  },
 }));
