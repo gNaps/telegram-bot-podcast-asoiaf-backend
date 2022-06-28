@@ -10,5 +10,10 @@ module.exports = {
       path: "/videos/notificationVideo",
       handler: "video.notificationVideo",
     },
+    {
+      method: "GET",
+      path: "/videos/notificationVideo",
+      handler: "video.notificationVideoAcknowledge",
+    },
   ],
 };
