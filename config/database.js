@@ -1,4 +1,5 @@
 const path = require("path");
+const parse = require("pg-connection-string").parse;
 
 module.exports = ({ env }) => {
   if (env("NODE_ENV") === "production") {
