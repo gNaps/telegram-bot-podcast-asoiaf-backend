@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "video_types",
+  "info": {
+    "singularName": "video-type",
+    "pluralName": "video-types",
+    "displayName": "videoType",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
