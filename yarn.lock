@@ -9648,6 +9648,11 @@ tarn@^3.0.2:
   resolved "https://registry.yarnpkg.com/tarn/-/tarn-3.0.2.tgz#73b6140fbb881b71559c4f8bfde3d9a4b3d27693"
   integrity sha512-51LAVKUSZSVfI05vjPESNc5vwqqZpbXCsU+/+wxlOrUjk2SnFTt97v9ZgQrD4YmxYW1Px6w2KjaDitCfkvgxMQ==
 
+tele-sender@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/tele-sender/-/tele-sender-1.0.2.tgz#343a70a17df91e10c140efdcc4b07eadabae13ac"
+  integrity sha512-AAG8Ykx4PO07HkXdQ3th/b8sOiyroLKCWPdmKEgGzFxnP44PbuM8etCnKwW8aBhdTln+2Bp6cx32KVrbSGZsTA==
+
 terser-webpack-plugin@^5.1.3:
   version "5.3.3"
   resolved "https://registry.yarnpkg.com/terser-webpack-plugin/-/terser-webpack-plugin-5.3.3.tgz#8033db876dd5875487213e87c627bca323e5ed90"

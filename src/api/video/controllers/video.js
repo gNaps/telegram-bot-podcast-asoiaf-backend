@@ -1,6 +1,7 @@
 "use strict";
 
 const axios = require("axios");
+const { Telegram, Telegram_ParseModes } = require("tele-sender");
 
 /**
  *  video controller
@@ -56,6 +57,12 @@ module.exports = createCoreController("api::video.video", ({ strapi }) => ({
 
   async notificationVideoAcknowledge(ctx) {
     console.log(ctx);
+    const telegram = new Telegram(process.env.TELEGRAM_KEY);
+    telegram.send(
+      process.env.TELEGRAM_CHAT,
+      "*Hello World\\!*",
+      Telegram_ParseModes.MarkdownV2
+    );
     return "hello youtube";
   },
 }));
