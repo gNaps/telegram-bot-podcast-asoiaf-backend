@@ -50,7 +50,15 @@ module.exports = createCoreController("api::video.video", ({ strapi }) => ({
   },
 
   async notificationVideo(ctx) {
-    console.log(ctx);
+    const text = "Nuovo video";
+    console.log(ctx.request.body);
+    const config = {
+      method: "get",
+      url: `https://api.telegram.org/bot${process.env.TELEGRAM_KEY}/sendMessage?chat_id=${process.env.TELEGRAM_CHAT_ID}&text=${text}&parse_mode=markdown`,
+      headers: {},
+    };
+    await axios(config);
+    return text;
   },
 
   async notificationVideoAcknowledge(ctx) {
